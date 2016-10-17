@@ -1,0 +1,30 @@
+ul.tabs-titles {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid #CCCCCC;
+	background-color: #F1F1F1;
+
+	li {
+		float: left;
+
+		a {
+			display: inline-block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			transition: 0.3s;
+			font-size: 17px;
+
+			&:hover {
+				background-color: #DDDDDD;
+			}
+		}
+	}
+}
+
+.active {
+	background-color: #CCCCCC;
+}
