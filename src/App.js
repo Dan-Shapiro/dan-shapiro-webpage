@@ -72,7 +72,7 @@ var Tabs = React.createClass({
 var ResumeContent = React.createClass({
   render: function() {
     return (
-      <a href='./resume/Dan_Shapiro_Resume.pdf' download>Download</a>
+      <a href='https://drive.google.com/file/d/0B27Eys614E94UGFodllQd0JvRGc/view?usp=sharing' download>Download</a>
     );
   }
 });
