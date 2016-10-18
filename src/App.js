@@ -69,13 +69,48 @@ var Tabs = React.createClass({
 });
 //TABS END- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-var ResumeContent = React.createClass({
+//CONTENT START - - - - - - - - - - - - - - - - - - - - - - - - - -
+var HomeContent = React.createClass({
   render: function() {
     return (
-      <a href='https://drive.google.com/uc?export=download&id=0B27Eys614E94T0g0OHJBM2dmeG8' download="Dan_Shapiro_Resume">Download</a>
+      <div>
+        <p>This is my Home content!</p>
+      </div>
     );
   }
 });
+
+var PersonalContent = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <p>This is my Personal content!</p>
+      </div>
+    );
+  }
+});
+
+var AcademicContent = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <p>This is my Academic content!</p>
+      </div>
+    );
+  }
+});
+
+var ResumeContent = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <p>This is my Resume content!</p>
+        <a href='https://drive.google.com/uc?export=download&id=0B27Eys614E94T0g0OHJBM2dmeG8' download="Dan_Shapiro_Resume">Download</a>
+      </div>
+    );
+  }
+});
+//CONTENT END - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 //APP START- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 var App = React.createClass({
@@ -84,25 +119,16 @@ var App = React.createClass({
       <div>
         <Tabs selected={0}>
           <Pane title="Home">
-            <div>
-              <p>This is my Home content!</p>
-            </div>
+            <HomeContent />
           </Pane>
           <Pane title="Academic">
-            <div>
-              <p>This is my Academic content!</p>
-            </div>
+            <AcademicContent />
           </Pane>
           <Pane title="Personal">
-            <div>
-              <p>This is my Personal content!</p>
-            </div>
+            <PersonalContent />
           </Pane>
           <Pane title="Resume">
-            <div>
-              <p>This is my Resume content!</p>
-              <ResumeContent />
-            </div>
+            <ResumeContent />
           </Pane>
         </Tabs>
       </div>
