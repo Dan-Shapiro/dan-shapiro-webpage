@@ -7,10 +7,10 @@ var LinkedinSquare = React.createClass({
   render: function() {
     return (
       <div>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/dan-shapiro-102b85a3">
           <Linkedin size={48} />
         </a>
-        <a href="#">
+        <a href="https://github.com/Shappp">
           <Github size={48} />
         </a>
       </div>
