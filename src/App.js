@@ -121,11 +121,11 @@ var App = React.createClass({
           <Pane title="Home">
             <HomeContent />
           </Pane>
-          <Pane title="Academic">
-            <AcademicContent />
-          </Pane>
           <Pane title="Personal">
             <PersonalContent />
+          </Pane>
+          <Pane title="Academic">
+            <AcademicContent />
           </Pane>
           <Pane title="Resume">
             <ResumeContent />
