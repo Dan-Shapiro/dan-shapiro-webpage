@@ -1,5 +1,22 @@
 import React from 'react';
+import Linkedin from 'react-icons/lib/fa/linkedin-square';
+import Github from 'react-icons/lib/fa/github-square';
 import './App.css';
+
+var LinkedinSquare = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <a href="#">
+          <Linkedin size={48} />
+        </a>
+        <a href="#">
+          <Github size={48} />
+        </a>
+      </div>
+    );
+  }
+});
 
 //TABS START - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 var Pane = React.createClass({
@@ -80,11 +97,11 @@ var HomeContent = React.createClass({
   }
 });
 
-var PersonalContent = React.createClass({
+var BioContent = React.createClass({
   render: function() {
     return (
       <div>
-        <p>This is my Personal content!</p>
+        <p>This is my Bio content!</p>
       </div>
     );
   }
@@ -117,12 +134,13 @@ var App = React.createClass({
   render: function() {
     return (
       <div>
+        <LinkedinSquare />
         <Tabs selected={0}>
           <Pane title="Home">
             <HomeContent />
           </Pane>
-          <Pane title="Personal">
-            <PersonalContent />
+          <Pane title="Bio">
+            <BioContent />
           </Pane>
           <Pane title="Academic">
             <AcademicContent />
