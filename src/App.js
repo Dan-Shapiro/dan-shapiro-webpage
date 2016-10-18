@@ -6,7 +6,7 @@ import './App.css';
 var LinkedinSquare = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="social-media">
         <a href="https://www.linkedin.com/in/dan-shapiro-102b85a3">
           <Linkedin size={48} />
         </a>
