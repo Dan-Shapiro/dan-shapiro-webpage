@@ -3,16 +3,28 @@ import Linkedin from 'react-icons/lib/fa/linkedin-square';
 import Github from 'react-icons/lib/fa/github-square';
 import './App.css';
 
-var LinkedinSquare = React.createClass({
+var SocialMedia = React.createClass({
   render: function() {
     return (
       <div className="social-media">
-        <a href="https://www.linkedin.com/in/dan-shapiro-102b85a3">
+        <a className="icon" href="https://www.linkedin.com/in/dan-shapiro-102b85a3">
           <Linkedin size={48} />
         </a>
-        <a href="https://github.com/Shappp">
+        <a className="icon" href="https://github.com/Shappp">
           <Github size={48} />
         </a>
+      </div>
+    );
+  }
+});
+
+var Header = React.createClass({
+  render: function() {
+    return(
+      <div className='header'>
+        <img src={require('./images/DS.png')} height={128} width={128} />
+        <h1>Dan Shapiro</h1>
+        <SocialMedia />
       </div>
     );
   }
@@ -134,7 +146,7 @@ var App = React.createClass({
   render: function() {
     return (
       <div>
-        <LinkedinSquare />
+        <Header />
         <Tabs selected={0}>
           <Pane title="Home">
             <HomeContent />

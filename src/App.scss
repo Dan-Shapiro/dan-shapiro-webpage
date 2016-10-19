@@ -1,3 +1,7 @@
+.header {
+	text-align: center;
+}
+
 ul.tabs-titles {
 	list-style-type: none;
 	margin: 0;
@@ -5,15 +9,26 @@ ul.tabs-titles {
 	overflow: hidden;
 	border: 1px solid #CCCCCC;
 	background-color: #F1F1F1;
+	display: table;
+	table-layout: fixed;
+	text-align: center;
+	width: 100%;
 
 	li {
-		float: left;
+		text-align: center;
+		display: table-cell;
+		width: 25%;
+		height: auto;
+		margin: 0;
+		padding: 0;
 
 		a {
-			display: inline-block;
+			display: block;
+			min-height: 100%;
 			color: black;
 			text-align: center;
-			padding: 14px 16px;
+			margin: 0;
+			padding: 16px 0;
 			text-decoration: none;
 			transition: 0.3s;
 			font-size: 17px;
@@ -30,7 +45,11 @@ ul.tabs-titles {
 }
 
 .social-media {
-	a {
+	a.icon {
 		color: #CCCCCC;
+
+		&:hover {
+			color: #999999;
+		}
 	}
 }

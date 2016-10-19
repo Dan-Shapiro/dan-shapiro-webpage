@@ -1,17 +1,31 @@
+.header {
+  text-align: center; }
+
 ul.tabs-titles {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   border: 1px solid #CCCCCC;
-  background-color: #F1F1F1; }
+  background-color: #F1F1F1;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%; }
   ul.tabs-titles li {
-    float: left; }
+    text-align: center;
+    display: table-cell;
+    width: 25%;
+    height: auto;
+    margin: 0;
+    padding: 0; }
     ul.tabs-titles li a {
-      display: inline-block;
+      display: block;
+      min-height: 100%;
       color: black;
       text-align: center;
-      padding: 14px 16px;
+      margin: 0;
+      padding: 16px 0;
       text-decoration: none;
       transition: 0.3s;
       font-size: 17px; }
@@ -21,7 +35,9 @@ ul.tabs-titles {
 .active {
   background-color: #CCCCCC; }
 
-.social-media a {
+.social-media a.icon {
   color: #CCCCCC; }
+  .social-media a.icon:hover {
+    color: #999999; }
 
 /*# sourceMappingURL=App.css.map */
