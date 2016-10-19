@@ -22,7 +22,7 @@ var Header = React.createClass({
   render: function() {
     return(
       <div className='header'>
-        <img src={require('./images/DS.png')} height={128} width={128} />
+        <img src={require('./images/DS.png')} role="presentation" height={128} width={128} />
         <h1>Dan Shapiro</h1>
         <SocialMedia />
       </div>
