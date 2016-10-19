@@ -1,5 +1,9 @@
 .header {
   text-align: center; }
+  .header .social-media a.icon {
+    color: #CCCCCC; }
+    .header .social-media a.icon:hover {
+      color: #999999; }
 
 ul.tabs-titles {
   list-style-type: none;
@@ -35,9 +39,7 @@ ul.tabs-titles {
 .active {
   background-color: #CCCCCC; }
 
-.social-media a.icon {
-  color: #CCCCCC; }
-  .social-media a.icon:hover {
-    color: #999999; }
+.content {
+  text-align: center; }
 
 /*# sourceMappingURL=App.css.map */

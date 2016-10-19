@@ -1,5 +1,15 @@
 .header {
 	text-align: center;
+
+	.social-media {
+		a.icon {
+			color: #CCCCCC;
+
+			&:hover {
+				color: #999999;
+			}
+		}
+	}
 }
 
 ul.tabs-titles {
@@ -44,12 +54,7 @@ ul.tabs-titles {
 	background-color: #CCCCCC;
 }
 
-.social-media {
-	a.icon {
-		color: #CCCCCC;
 
-		&:hover {
-			color: #999999;
-		}
-	}
+.content {
+	text-align: center;
 }

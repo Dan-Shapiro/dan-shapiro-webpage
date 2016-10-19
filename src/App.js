@@ -102,7 +102,7 @@ var Tabs = React.createClass({
 var HomeContent = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="content">
         <p>This is my Home content!</p>
       </div>
     );
@@ -112,7 +112,7 @@ var HomeContent = React.createClass({
 var BioContent = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="content">
         <p>This is my Bio content!</p>
       </div>
     );
@@ -122,7 +122,7 @@ var BioContent = React.createClass({
 var AcademicContent = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="content">
         <p>This is my Academic content!</p>
       </div>
     );
@@ -132,7 +132,7 @@ var AcademicContent = React.createClass({
 var ResumeContent = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="content">
         <p>This is my Resume content!</p>
         <a href='https://drive.google.com/uc?export=download&id=0B27Eys614E94T0g0OHJBM2dmeG8' download="Dan_Shapiro_Resume">Download</a>
       </div>
