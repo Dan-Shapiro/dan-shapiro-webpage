@@ -104,6 +104,15 @@ var HomeContent = React.createClass({
     return (
       <div className="content">
         <p>This is my Home content!</p>
+        <p>This is my Home content!</p>
+        <p>This is my Home content!</p>
+        <p>This is my Home content!</p>
+        <p>This is my Home content!</p>
+        <p>This is my Home content!</p>
+        <p>This is my Home content!</p>
+        <p>This is my Home content!</p>
+        <p>This is my Home content!</p>
+        <p>This is my Home content!</p>
       </div>
     );
   }
@@ -141,6 +150,18 @@ var ResumeContent = React.createClass({
 });
 //CONTENT END - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+//FOOTER START - - - - - - - - - - - - - - - - - - - - - - - - - -
+var Footer = React.createClass({
+  render: function() {
+    return (
+      <div className="footer">
+        <h4>DAN SHAPIRO</h4>
+      </div>
+    );
+  }
+});
+//FOOTER END - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 //APP START- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 var App = React.createClass({
   render: function() {
@@ -161,6 +182,7 @@ var App = React.createClass({
             <ResumeContent />
           </Pane>
         </Tabs>
+        <Footer />
       </div>
     );
   }
