@@ -7,8 +7,15 @@ html, body, .main {
 
 .header {
 	text-align: center;
-	background-color: white;
 	padding: 10px 0;
+
+	img.background {
+		width: 50%;
+		height: auto;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
 
 	.social-media {
 		a.icon {

@@ -23,6 +23,9 @@ var Header = React.createClass({
     return(
       <div className='header'>
         <img src={require('./images/DS.png')} role="presentation" height={128} width={128} />
+        <p>Bootstrap this section later!</p>
+        <img src={require('./images/photo2.png')} role="presentation" className="background" />
+        <br />
         <h1>Dan Shapiro</h1>
         <SocialMedia />
       </div>
