@@ -5,24 +5,19 @@ html, body, .main {
 	background-color: #F1F1F1;
 }
 
-.header {
+#header {
 	text-align: center;
-	padding: 10px 0;
+	width: 100%;
+	margin-top: -20px;
 
-	img.background {
-		width: 50%;
-		height: auto;
-		position: relative;
-		top: 0;
-		left: 0;
-	}
+	.info {
+		.social-media {
+			a.icon {
+				color: #CCCCCC;
 
-	.social-media {
-		a.icon {
-			color: #CCCCCC;
-
-			&:hover {
-				color: #999999;
+				&:hover {
+					color: #999999;
+				}
 			}
 		}
 	}

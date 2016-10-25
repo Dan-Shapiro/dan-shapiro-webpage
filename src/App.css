@@ -4,18 +4,13 @@ html, body, .main {
   padding: 0;
   background-color: #F1F1F1; }
 
-.header {
+#header {
   text-align: center;
-  padding: 10px 0; }
-  .header img.background {
-    width: 50%;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: 0; }
-  .header .social-media a.icon {
+  width: 100%;
+  margin-top: -20px; }
+  #header .info .social-media a.icon {
     color: #CCCCCC; }
-    .header .social-media a.icon:hover {
+    #header .info .social-media a.icon:hover {
       color: #999999; }
 
 ul.tabs-titles {

@@ -2,6 +2,7 @@ import React from 'react';
 import Linkedin from 'react-icons/lib/fa/linkedin-square';
 import Github from 'react-icons/lib/fa/github-square';
 import './App.css';
+var headshot = require('./images/photo2.png');
 
 var SocialMedia = React.createClass({
   render: function() {
@@ -20,14 +21,26 @@ var SocialMedia = React.createClass({
 
 var Header = React.createClass({
   render: function() {
+    var divImage = {
+      backgroundImage: 'url(' + headshot + ')',
+      backgroundSize: 'auto 100%',
+      backgroundRepeat: 'none'
+    };
+
     return(
-      <div className='header'>
-        <img src={require('./images/DS.png')} role="presentation" height={128} width={128} />
-        <p>Bootstrap this section later!</p>
-        <img src={require('./images/photo2.png')} role="presentation" className="background" />
-        <br />
-        <h1>Dan Shapiro</h1>
-        <SocialMedia />
+      <div className='header' id="header">
+        <div className="info" style={divImage}>
+          <h1>Dan Shapiro</h1>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <SocialMedia />
+        </div>
       </div>
     );
   }
@@ -185,7 +198,6 @@ var App = React.createClass({
             <ResumeContent />
           </Pane>
         </Tabs>
-        <Footer />
       </div>
     );
   }
