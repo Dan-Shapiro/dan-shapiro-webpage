@@ -22,10 +22,9 @@ var SocialMedia = React.createClass({
 var Header = React.createClass({
   render: function() {
     var divImage = {
-      backgroundImage: 'url(' + headshot + ')',
-      backgroundSize: 'auto 100%',
-      backgroundRepeat: 'none'
-    };
+      background: 'url(' + headshot + ') no-repeat center',
+      backgroundSize: 'auto 100%'
+    }
 
     return(
       <div className='header' id="header">
