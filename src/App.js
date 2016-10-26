@@ -52,6 +52,10 @@ var Header = React.createClass({
           <br />
           <br />
           <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <SocialMedia />
         </div>
       </div>
