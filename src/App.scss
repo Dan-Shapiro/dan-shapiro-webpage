@@ -8,9 +8,17 @@ html, body, .main {
 #header {
 	text-align: center;
 	width: 100%;
-	margin-top: -20px;
+
+	h1 {
+		font-size: 48pt;
+		font-family: Verdana;
+		text-shadow: 2px 2px black;
+	}
 
 	.info {
+		color: white;
+		padding: 20px;
+
 		.social-media {
 			a.icon {
 				color: #CCCCCC;

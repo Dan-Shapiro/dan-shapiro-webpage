@@ -2,7 +2,8 @@ import React from 'react';
 import Linkedin from 'react-icons/lib/fa/linkedin-square';
 import Github from 'react-icons/lib/fa/github-square';
 import './App.css';
-var headshot = require('./images/photo2.png');
+var headshot = require('./images/headshot.png');
+var grid = require('./images/gridblur.png');
 
 var SocialMedia = React.createClass({
   render: function() {
@@ -21,15 +22,28 @@ var SocialMedia = React.createClass({
 
 var Header = React.createClass({
   render: function() {
+    var divGrid = {
+      background: 'url(' + grid + ')',
+      backgroundSize: 'auto 100%'
+    };
+
     var divImage = {
       background: 'url(' + headshot + ') no-repeat center',
       backgroundSize: 'auto 100%'
-    }
+    };
 
     return(
-      <div className='header' id="header">
+      <div className='header' id="header" style={divGrid}>
         <div className="info" style={divImage}>
           <h1>Dan Shapiro</h1>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <br />
           <br />
           <br />
